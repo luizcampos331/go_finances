@@ -37,6 +37,11 @@ export const Card = styled.div`
     p {
       font-size: 16px;
     }
+
+    img {
+      height: 32px;
+      width: 32px;
+    }
   }
 
   h1 {

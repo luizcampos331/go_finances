@@ -22,9 +22,17 @@ export const Container = styled.div<ContainerProps>`
         text-decoration: none;
         font-size: 16px;
         transition: opacity 0.2s;
+        padding-bottom: 10px;
+
+        &:first-child {
+          border-bottom: ${({ size }) =>
+            size === 'large' && '2px solid #ff872c'};
+        }
 
         & + a {
           margin-left: 32px;
+          border-bottom: ${({ size }) =>
+            size === 'small' && '2px solid #ff872c'};
         }
 
         &:hover {
